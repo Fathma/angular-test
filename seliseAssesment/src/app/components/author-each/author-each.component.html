@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="box2" *ngIf="i%2 !== 0">
+        <div >
+        <b> Name: </b><a href="author.link" class='link-style'>{{author.name}}</a>
+            <button *ngIf="!author.is_fav" class="btn btn-primary left"  (click)='onAddFavt(author)'>Add Favt</button>
+            <button *ngIf="author.is_fav" class="btn btn-primary left"  (click)='onRemoveFavt(author)'>Remove Favt</button>
+        </div>
+        <b>Bio:</b> {{author.bio}}
+    </div>
+    <div class="box1" *ngIf="i%2 == 0">
+        <div >
+            <b> Name: </b> <a href="author.link" class='link-style'>{{author.name}}</a>
+            <button *ngIf="!author.is_fav" class="btn btn-primary left"  (click)='onAddFavt(author)'>Add Favt</button>
+            <button *ngIf="author.is_fav" class="btn btn-primary left"  (click)='onRemoveFavt(author)'>Remove Favt</button>
+        </div>
+        <b>Bio:</b> {{author.bio}}
+    </div>
+</div>

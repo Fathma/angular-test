@@ -1,0 +1,27 @@
+.box1 {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 47%;
+  height: 94px;
+  float: left;
+  overflow: hidden;
+}
+
+.box2 {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 47%;
+
+  height: 94px;
+  overflow: hidden;
+}
+
+.row {
+  min-height: 1px;
+}
+
+.left {
+  float: right;
+}

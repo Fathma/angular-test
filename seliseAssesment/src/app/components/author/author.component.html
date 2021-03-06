@@ -1,0 +1,15 @@
+
+
+
+<div class="container">
+    <div class='row'>
+    <app-author-each  *ngFor='let author of authors.results; index as i' [i]='i' [author]="author"
+    (addFavt)="addFavt($event)" (removeFavt)="removeFavt($event)">
+    </app-author-each>
+</div>
+    <div class='pageChange' *ngIf="content == 'author'" > <span (click)='onPageChangePrev()'><</span> Page {{pageNumber}} <span (click)='onPageChangeNext()'>></span> </div>
+</div>
+
+
+
+
